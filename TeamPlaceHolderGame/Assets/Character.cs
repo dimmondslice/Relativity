@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Character : MonoBehaviour
@@ -52,7 +52,7 @@ public class Character : MonoBehaviour
 		//move relative right
 		if(Input.GetAxis("Horizontal") > 0f)
 		{
-			rigidbody.velocity = new Vector3(rigidbody.velocity.x + maxSpeed, rigidbody.velocity.y, rigidbody.velocity.z);
+
 		}
 		//move relative left
 		if(Input.GetAxis("Horizontal") < 0f)
