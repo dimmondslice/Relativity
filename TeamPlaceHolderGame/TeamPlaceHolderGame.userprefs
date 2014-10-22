@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\DuelMajorRepo\Assets\CharacterStuff\GSAS\GSAS_C_Behavior.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs">
     <Files>
-      <File FileName="..\..\DuelMajorRepo\Assets\CharacterStuff\GSAS\GSAS_C_Behavior.cs" Line="102" Column="24" />
+      <File FileName="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" Line="33" Column="17" />
+      <File FileName="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" Line="12" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
