@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\sdr_testShader.shader">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MaterialsAndShaders\sdr_testShader.shader">
     <Files>
-      <File FileName="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" Line="12" Column="3" />
-      <File FileName="Assets\sdr_testShader.shader" Line="21" Column="1" />
+      <File FileName="Assets\MaterialsAndShaders\sdr_testShader.shader" Line="27" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
