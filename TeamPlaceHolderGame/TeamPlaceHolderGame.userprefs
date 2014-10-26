@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Dropbox\Game AI\hw4\Assets\FormationBehavior.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\sdr_testShader.shader">
     <Files>
-      <File FileName="..\..\..\Dropbox\Game AI\hw4\Assets\Agent.cs" Line="14" Column="47" />
-      <File FileName="..\..\..\Dropbox\Game AI\hw4\Assets\Flockbehavior.cs" Line="23" Column="3" />
-      <File FileName="..\..\..\Dropbox\Game AI\hw4\Assets\FormationBehavior.cs" Line="15" Column="3" />
+      <File FileName="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" Line="12" Column="3" />
+      <File FileName="Assets\sdr_testShader.shader" Line="21" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
