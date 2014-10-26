@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Character.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
@@ -55,7 +56,7 @@
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/kongj3/CloudStation/RPI/Junior/GameDev1/Unity/shadows/TeamPlaceHolderGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/johnss18/Documents/TeamPlaceholder/TeamPlaceHolderGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>

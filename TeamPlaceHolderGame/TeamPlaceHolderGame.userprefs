@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Dropbox\Game AI\hw4\Assets\FormationBehavior.cs">
     <Files>
-      <File FileName="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" Line="33" Column="17" />
-      <File FileName="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" Line="12" Column="3" />
+      <File FileName="..\..\..\Dropbox\Game AI\hw4\Assets\Agent.cs" Line="14" Column="47" />
+      <File FileName="..\..\..\Dropbox\Game AI\hw4\Assets\Flockbehavior.cs" Line="23" Column="3" />
+      <File FileName="..\..\..\Dropbox\Game AI\hw4\Assets\FormationBehavior.cs" Line="15" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

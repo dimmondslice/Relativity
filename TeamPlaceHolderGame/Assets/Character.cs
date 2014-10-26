@@ -4,7 +4,7 @@ using System.Collections;
 public class Character : MonoBehaviour
 {
 	//GROUND VARIABLES
-	public Vector3 downVec{get; protected set;}//a vector which tells you where gravity is directing this character
+	public Vector3 relativeDownVec{get; protected set;}//a vector which tells you where gravity is directing this character
 	private float groundAccuracy;//the distance of the racast from the feet, if there is an object less than that far away then you are on the ground
 	private float deathByFallDist;//fall farther than this and you will die 
 	public bool onGround		//getter function returns whether you are on the ground or not
