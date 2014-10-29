@@ -49,11 +49,14 @@
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\MaterialsAndShaders\sdr_pencil.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\MaterialsAndShaders\sdr_pencil 1.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\MaterialsAndShaders\sdr_pencil02.shader" />
      <None Include="Assets\MaterialsAndShaders\sdr_testShader.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/kongj3/CloudStation/RPI/Junior/GameDev1/Unity/shadows/TeamPlaceHolderGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
