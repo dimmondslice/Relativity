@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{75B39518-450A-8F42-7F7C-C5F523A62002}</ProjectGuid>
+	<ProjectGuid>{CC31DA5F-D734-03D5-90F4-F78B7417B3A1}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,10 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Character.cs" />
-     <Compile Include="Assets\Master.cs" />
-     <Compile Include="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" />
-     <Compile Include="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" />
+     <Compile Include="Assets\Start menu.js" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\MaterialsAndShaders\sdr_pencil.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
