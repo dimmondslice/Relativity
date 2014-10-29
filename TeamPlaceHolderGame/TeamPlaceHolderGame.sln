@@ -7,6 +7,8 @@ Project("{F8CAA1E1-2E8D-DF52-C017-EFA09202E5ED}") = "TeamPlaceHolderGame", "Asse
 EndProject
 Project("{F8CAA1E1-2E8D-DF52-C017-EFA09202E5ED}") = "TeamPlaceHolderGame", "Assembly-UnityScript-firstpass.unityproj", "{34E8D10C-1946-BAD9-34D1-69E8D96B9787}"
 EndProject
+Project("{F8CAA1E1-2E8D-DF52-C017-EFA09202E5ED}") = "TeamPlaceHolderGame", "Assembly-UnityScript.unityproj", "{CC31DA5F-D734-03D5-90F4-F78B7417B3A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{34E8D10C-1946-BAD9-34D1-69E8D96B9787}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34E8D10C-1946-BAD9-34D1-69E8D96B9787}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34E8D10C-1946-BAD9-34D1-69E8D96B9787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC31DA5F-D734-03D5-90F4-F78B7417B3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC31DA5F-D734-03D5-90F4-F78B7417B3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC31DA5F-D734-03D5-90F4-F78B7417B3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC31DA5F-D734-03D5-90F4-F78B7417B3A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-				GlobalSection(MonoDevelopProperties) = preSolution
+											GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
