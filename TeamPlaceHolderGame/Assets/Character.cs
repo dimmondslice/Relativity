@@ -12,7 +12,7 @@ public class Character : MonoBehaviour
 		get
 		{
 			RaycastHit hitInfo;
-			Debug.DrawLine( transform.position, transform.position + relativeDownVec * groundAccuracy);
+			//Debug.DrawLine( transform.position, transform.position + relativeDownVec * groundAccuracy);
 
 			//if there is something within groundAccuracy of your feet
 			Vector3 start = transform.position + relativeDownVec * -1 * .05f; // start the vector just slightly above the feet
@@ -84,6 +84,8 @@ public class Character : MonoBehaviour
 		{
 			Jump();
 		}
+
+		Debug.DrawRay(transform.position, rigidbody.velocity, Color.magenta);
 	}
 	//moves the character based on user input, does not apply gravity, that is down from the ApplyGravity fn which is called from update()
 	protected void MovementMotor()
@@ -119,6 +121,8 @@ public class Character : MonoBehaviour
 			}
 			//adds "gravity vector" to your current velocity. gravity is just the relative downward direction time the scalar currentFallingSpeed
 			rigidbody.velocity = rigidbody.velocity + currentFallingSpeed * relativeDownVec;
+
+
 		}
 		else if (relativeYVel < .1f)	//this should prevent setting the rel. Y =0 if you just jumped
 		{
