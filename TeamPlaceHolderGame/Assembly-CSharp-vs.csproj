@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Character.cs" />
+     <Compile Include="Assets\Master.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />

@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\sdr_testShader.shader">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Character.cs">
     <Files>
-      <File FileName="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" Line="12" Column="3" />
-      <File FileName="Assets\sdr_testShader.shader" Line="21" Column="1" />
+      <File FileName="Assets\Character.cs" Line="74" Column="51" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" Line="29" Column="2" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="514" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
