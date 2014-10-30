@@ -29,16 +29,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: coverTex
+          name: _Detail
         second:
-          m_Texture: {fileID: 2800000, guid: 2b231aa0d7fba634a8234aec4a9cfada, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Detail
+          name: coverTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 2b231aa0d7fba634a8234aec4a9cfada, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -50,7 +50,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .786764741, g: .786764741, b: .786764741, a: 1}
       data:
         first:
           name: _SpecColor

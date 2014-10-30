@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pencilMaterial2
+  m_Name: pencilTex
   m_Shader: {fileID: 4800000, guid: 3463c442f693cba4da057dd9a9ed1b59, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
@@ -17,7 +17,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 2b231aa0d7fba634a8234aec4a9cfada, type: 3}
+          m_Texture: {fileID: 2800000, guid: d7fa6f90a37c52c4ea1a51b88abe7729, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats: {}
