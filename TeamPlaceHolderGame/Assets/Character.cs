@@ -56,6 +56,8 @@ public class Character : MonoBehaviour
 		}
 	}
 
+	//MISC
+	public checkpointRespawnAt CPRA;
 
 	void Start ()
 	{
@@ -69,6 +71,8 @@ public class Character : MonoBehaviour
 		deathByFallDist = 20f;
 
 		jumpForce = 30000f;
+
+		CPRA = GetComponent<checkpointRespawnAt>();
 	}
 
 	void Update ()
@@ -158,6 +162,11 @@ public class Character : MonoBehaviour
 		transform.forward = whichWayIsDown;
 		transform.Rotate(-90f,0f,0f, Space.Self);
 	}
+	public void Respawn()
+	{
+		CPRA.doRespawn();
+		ChangeOrientation( CPRA.newOrientation);
+	}
 	//this is really mostly for debug, manually changes player orientation by pressing 1-6
 	protected void CheckForManualOrientationChange()
 	{
@@ -190,5 +199,6 @@ public class Character : MonoBehaviour
 	void StartFallingToDeath()
 	{
 		print("you would have died right here right now because you are bad at this game");
+		Respawn();
 	}
 }
