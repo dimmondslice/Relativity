@@ -51,6 +51,7 @@
      <Compile Include="Assets\Master.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" />
+     <Compile Include="Assets\Teleporter.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\MaterialsAndShaders\Shaders\sdr_flatSmooth.shader" />
      <None Include="Assets\MaterialsAndShaders\Shaders\sdr_pencil.shader" />
