@@ -7,6 +7,8 @@ public class checkpointNodeBehavior : MonoBehaviour {
 
 	private bool active = false;
 	private string checkpointTag = "Checkpoint";
+
+	public Vector3 orientation;
 	
 
 	// Use this for initialization
