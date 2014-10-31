@@ -4,7 +4,7 @@ using System.Collections;
 public class Character : MonoBehaviour
 {
 	//GROUND VARIABLES
-	public Vector3 relativeDownVec{get; protected set;}//a vector which tells you where gravity is directing this character
+	public Vector3 relativeDownVec;//a vector which tells you where gravity is directing this character
 	private float groundAccuracy = .1f;//the distance of the racast from the feet, if there is an object less than that far away then you are on the ground
 	private float deathByFallDist;//fall farther than this and you will die 
 	public bool onGround		//getter function returns whether you are on the ground or not
@@ -91,6 +91,23 @@ public class Character : MonoBehaviour
 
 		Debug.DrawRay(transform.position, rigidbody.velocity, Color.magenta);
 	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		//Start Teleport code
+		if(other.tag == "Teleport")
+		{
+			Teleporter teleport = other.GetComponent<Teleporter>();
+			if(teleport.receivingTeleporter == null)// teleporters aren't really two sided so this should stop shenanigans
+				return;
+
+			rigidbody.velocity = Vector3.zero;
+			ChangeOrientation(teleport.orientationAfterTeleport);
+			transform.position = teleport.receivingTeleporter.position;
+			transform.forward = teleport.receivingTeleporter.forward;	//this is important, it makes sure you face the exit of the reciever teleport
+		}
+	}
+
 	//moves the character based on user input, does not apply gravity, that is down from the ApplyGravity fn which is called from update()
 	protected void MovementMotor()
 	{
@@ -167,6 +184,7 @@ public class Character : MonoBehaviour
 		CPRA.doRespawn();
 		ChangeOrientation( CPRA.newOrientation);
 	}
+
 	//this is really mostly for debug, manually changes player orientation by pressing 1-6
 	protected void CheckForManualOrientationChange()
 	{
