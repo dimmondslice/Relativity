@@ -56,6 +56,8 @@ public class Character : MonoBehaviour
 		}
 	}
 
+	//MISC
+	public checkpointRespawnAt CPRA;
 
 	void Start ()
 	{
@@ -69,6 +71,8 @@ public class Character : MonoBehaviour
 		deathByFallDist = 20f;
 
 		jumpForce = 30000f;
+
+		CPRA = GetComponent<checkpointRespawnAt>();
 	}
 
 	void Update ()
@@ -111,8 +115,7 @@ public class Character : MonoBehaviour
 	protected void ApplyGravity()
 	{
 		if(!onGround)
-		{
-			print ("not grounded");
+		{;
 			//increase fallingspeed if you're not at your max yet
 			if(currentFallingSpeed < maxFallingSpeed)
 			{
@@ -121,7 +124,6 @@ public class Character : MonoBehaviour
 			}
 			//adds "gravity vector" to your current velocity. gravity is just the relative downward direction time the scalar currentFallingSpeed
 			rigidbody.velocity = rigidbody.velocity + currentFallingSpeed * relativeDownVec;
-
 
 		}
 		else if (relativeYVel < .1f)	//this should prevent setting the rel. Y =0 if you just jumped
@@ -159,26 +161,11 @@ public class Character : MonoBehaviour
 		//rotate the character so their local down is the same as whichwayisDown
 		transform.forward = whichWayIsDown;
 		transform.Rotate(-90f,0f,0f, Space.Self);
-		
-		if(whichWayIsDown.x > 0)
-		{
-		}
-		else if(whichWayIsDown.x < 0)
-		{
-		}
-		else if(whichWayIsDown.y > 0)
-		{
-		}
-		else if(whichWayIsDown.y < 0)
-		{
-		}
-		else if(whichWayIsDown.z > 0)
-		{
-		}
-		else if(whichWayIsDown.z < 0)
-		{
-		}
-		
+	}
+	public void Respawn()
+	{
+		CPRA.doRespawn();
+		ChangeOrientation( CPRA.newOrientation);
 	}
 	//this is really mostly for debug, manually changes player orientation by pressing 1-6
 	protected void CheckForManualOrientationChange()
@@ -212,5 +199,6 @@ public class Character : MonoBehaviour
 	void StartFallingToDeath()
 	{
 		print("you would have died right here right now because you are bad at this game");
+		Respawn();
 	}
 }
