@@ -139,7 +139,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: m_CastShadows
@@ -913,7 +913,7 @@ Transform:
   m_PrefabInternal: {fileID: 47738260}
   m_GameObject: {fileID: 1067905231}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 17, z: 0}
+  m_LocalPosition: {x: 0, y: 17, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 293439751}
