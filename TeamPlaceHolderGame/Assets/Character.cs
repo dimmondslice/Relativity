@@ -65,12 +65,12 @@ public class Character : MonoBehaviour
 		maxSpeed = 10f;
 		currentSpeed = maxSpeed;
 		currentFallingSpeed = 0f;
-		maxFallingSpeed = 60f;
-		fallingAccel = 9.8f;
+		maxFallingSpeed = 40f;
+		fallingAccel = 2f;
 		relativeDownVec = new Vector3(0f,-1f,0f);
 		deathByFallDist = 20f;
 
-		jumpForce = 30000f;
+		jumpForce = 2000f;
 
 		CPRA = GetComponent<checkpointRespawnAt>();
 	}
@@ -79,7 +79,10 @@ public class Character : MonoBehaviour
 	{
 		//this is really mostly for debug, manually changes player orientation by pressing 1-6
 		CheckForManualOrientationChange();
-		MovementMotor();
+		if(onGround)
+		{
+			MovementMotor();
+		}
 		//apply gravity (don't worry inside the fn it checks if you're actually on the ground or not)
 		ApplyGravity();
 
@@ -104,7 +107,9 @@ public class Character : MonoBehaviour
 			rigidbody.velocity = Vector3.zero;
 			ChangeOrientation(teleport.orientationAfterTeleport);
 			transform.position = teleport.receivingTeleporter.position;
-			transform.forward = teleport.receivingTeleporter.forward;	//this is important, it makes sure you face the exit of the reciever teleport
+
+			transform.rotation = teleport.receivingTeleporter.rotation;
+			//transform.forward = teleport.receivingTeleporter.forward;	//this is important, it makes sure you face the exit of the reciever teleport
 		}
 	}
 
@@ -132,20 +137,22 @@ public class Character : MonoBehaviour
 	protected void ApplyGravity()
 	{
 		if(!onGround)
-		{;
+		{
 			//increase fallingspeed if you're not at your max yet
 			if(currentFallingSpeed < maxFallingSpeed)
 			{
 				//your downward speed from gravity will accelerate based on time in seconds
-				currentFallingSpeed += fallingAccel * Time.deltaTime;
+				currentFallingSpeed += fallingAccel;
 			}
 			//adds "gravity vector" to your current velocity. gravity is just the relative downward direction time the scalar currentFallingSpeed
-			rigidbody.velocity = rigidbody.velocity + currentFallingSpeed * relativeDownVec;
+			rigidbody.velocity = rigidbody.velocity + currentFallingSpeed * Time.deltaTime * relativeDownVec;
+
+			print(rigidbody.velocity);
 
 		}
 		else if (relativeYVel < .1f)	//this should prevent setting the rel. Y =0 if you just jumped
 		{
-			/*
+
 			currentFallingSpeed = 0f;
 
 			//if you are on the ground, set whichever axis of your velocity vec that is down = to 0
@@ -161,7 +168,7 @@ public class Character : MonoBehaviour
 			{
 				rigidbody.velocity = new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, 0f);
 			}
-			*/
+
 		}
 	}
 	protected void Jump()
@@ -176,13 +183,13 @@ public class Character : MonoBehaviour
 		//update down vec
 		relativeDownVec = whichWayIsDown;
 		//rotate the character so their local down is the same as whichwayisDown
-		transform.forward = whichWayIsDown;
+		transform.forward = relativeDownVec;
 		transform.Rotate(-90f,0f,0f, Space.Self);
 	}
 	public void Respawn()
 	{
-		CPRA.doRespawn();
-		ChangeOrientation( CPRA.newOrientation);
+		//CPRA.doRespawn();
+		//ChangeOrientation( CPRA.newOrientation);
 	}
 
 	//this is really mostly for debug, manually changes player orientation by pressing 1-6
@@ -216,6 +223,8 @@ public class Character : MonoBehaviour
 
 	void StartFallingToDeath()
 	{
+		currentFallingSpeed = 0f;
+
 		print("you would have died right here right now because you are bad at this game");
 		Respawn();
 	}
