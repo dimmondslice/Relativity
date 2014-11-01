@@ -483,7 +483,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!64 &118121252
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1022,6 +1022,10 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
+      propertyPath: orientationAfterTeleport.x
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
   m_RootGameObject: {fileID: 478795920}
@@ -1146,7 +1150,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!64 &320847157
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1249,7 +1253,7 @@ Transform:
   m_Children:
   - {fileID: 1391768362}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
 --- !u!23 &376618275
 Renderer:
   m_ObjectHideFlags: 0
@@ -1381,7 +1385,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
 --- !u!64 &410266503
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1695,7 +1699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e62e1ff61859c499da3dbb85584383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orientationAfterTeleport: {x: 0, y: 0, z: 0}
+  orientationAfterTeleport: {x: 1, y: 0, z: 0}
   receivingTeleporter: {fileID: 478612935}
 --- !u!65 &478795924
 BoxCollider:
@@ -1722,7 +1726,7 @@ Transform:
   m_Children:
   - {fileID: 478612935}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 20
 --- !u!1001 &479857193
 Prefab:
   m_ObjectHideFlags: 0
@@ -2049,7 +2053,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
 --- !u!64 &646013270
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2150,7 +2154,7 @@ Transform:
   m_Children:
   - {fileID: 350208829}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 9
 --- !u!1001 &701914129
 Prefab:
   m_ObjectHideFlags: 0
@@ -2276,7 +2280,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: orientationAfterTeleport.y
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
@@ -2358,7 +2362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
 --- !u!64 &838766605
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2447,7 +2451,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
 --- !u!64 &845134739
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2674,7 +2678,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
 --- !u!64 &910291453
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2886,7 +2890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e62e1ff61859c499da3dbb85584383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orientationAfterTeleport: {x: 0, y: 0, z: -1}
+  orientationAfterTeleport: {x: 0, y: -1, z: 0}
   receivingTeleporter: {fileID: 1805514266}
 --- !u!65 &956490997
 BoxCollider:
@@ -2913,7 +2917,7 @@ Transform:
   m_Children:
   - {fileID: 1805514266}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 11
 --- !u!1 &960576446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2989,7 +2993,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!64 &960576451
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3078,7 +3082,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 10
 --- !u!64 &982289670
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3167,7 +3171,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
 --- !u!64 &990309283
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3339,7 +3343,7 @@ Transform:
   - {fileID: 152275063}
   - {fileID: 115015473}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!54 &1041467528
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4035,7 +4039,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
 --- !u!64 &1294728855
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4281,7 +4285,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
 --- !u!64 &1351614992
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4353,6 +4357,14 @@ Prefab:
     - target: {fileID: 400002, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: m_LocalPosition.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
+      propertyPath: orientationAfterTeleport.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
+      propertyPath: orientationAfterTeleport.y
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
@@ -4429,6 +4441,10 @@ Prefab:
     - target: {fileID: 400002, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: m_LocalRotation.w
       value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
+      propertyPath: orientationAfterTeleport.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
@@ -4832,7 +4848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
 --- !u!64 &1509182620
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5402,7 +5418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e62e1ff61859c499da3dbb85584383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orientationAfterTeleport: {x: 0, y: 0, z: 0}
+  orientationAfterTeleport: {x: 1, y: 0, z: 0}
   receivingTeleporter: {fileID: 2028053336}
 --- !u!65 &1738667926
 BoxCollider:
@@ -5618,7 +5634,7 @@ Transform:
   m_Children:
   - {fileID: 1474527416}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!23 &1800671113
 Renderer:
   m_ObjectHideFlags: 0
@@ -5660,7 +5676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e62e1ff61859c499da3dbb85584383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orientationAfterTeleport: {x: 0, y: 1, z: 0}
+  orientationAfterTeleport: {x: 0, y: -1, z: 0}
   receivingTeleporter: {fileID: 1474527416}
 --- !u!65 &1800671116
 BoxCollider:
@@ -6028,7 +6044,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
 --- !u!64 &1899084798
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -1834,7 +1834,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: orientationAfterTeleport.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
@@ -2394,7 +2394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e62e1ff61859c499da3dbb85584383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orientationAfterTeleport: {x: 1, y: 0, z: 1}
+  orientationAfterTeleport: {x: 0, y: 0, z: 1}
   receivingTeleporter: {fileID: 1455550293}
 --- !u!65 &1550968616
 BoxCollider:
