@@ -104,7 +104,9 @@ public class Character : MonoBehaviour
 			rigidbody.velocity = Vector3.zero;
 			ChangeOrientation(teleport.orientationAfterTeleport);
 			transform.position = teleport.receivingTeleporter.position;
-			transform.forward = teleport.receivingTeleporter.forward;	//this is important, it makes sure you face the exit of the reciever teleport
+
+			transform.rotation = teleport.receivingTeleporter.rotation;
+			//transform.forward = teleport.receivingTeleporter.forward;	//this is important, it makes sure you face the exit of the reciever teleport
 		}
 	}
 
@@ -176,13 +178,12 @@ public class Character : MonoBehaviour
 		//update down vec
 		relativeDownVec = whichWayIsDown;
 		//rotate the character so their local down is the same as whichwayisDown
-		transform.forward = whichWayIsDown;
 		transform.Rotate(-90f,0f,0f, Space.Self);
 	}
 	public void Respawn()
 	{
-		CPRA.doRespawn();
-		ChangeOrientation( CPRA.newOrientation);
+		//CPRA.doRespawn();
+		//ChangeOrientation( CPRA.newOrientation);
 	}
 
 	//this is really mostly for debug, manually changes player orientation by pressing 1-6
