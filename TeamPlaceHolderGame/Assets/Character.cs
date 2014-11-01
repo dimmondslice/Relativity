@@ -65,8 +65,8 @@ public class Character : MonoBehaviour
 		maxSpeed = 10f;
 		currentSpeed = maxSpeed;
 		currentFallingSpeed = 0f;
-		maxFallingSpeed = 40f;
-		fallingAccel = 2f;
+		maxFallingSpeed = 70f;
+		fallingAccel = 7f;
 		relativeDownVec = new Vector3(0f,-1f,0f);
 		deathByFallDist = 20f;
 
@@ -145,7 +145,7 @@ public class Character : MonoBehaviour
 				currentFallingSpeed += fallingAccel;
 			}
 			//adds "gravity vector" to your current velocity. gravity is just the relative downward direction time the scalar currentFallingSpeed
-			rigidbody.velocity = rigidbody.velocity + currentFallingSpeed * Time.deltaTime * relativeDownVec;
+			rigidbody.velocity = rigidbody.velocity + currentFallingSpeed * Time.fixedDeltaTime * relativeDownVec;
 
 			print(rigidbody.velocity);
 
