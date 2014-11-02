@@ -1774,7 +1774,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: .0117485011
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1782,11 +1782,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: .999930978
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: m_Name
@@ -1834,7 +1834,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
       propertyPath: orientationAfterTeleport.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
@@ -2394,7 +2394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e62e1ff61859c499da3dbb85584383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orientationAfterTeleport: {x: 1, y: 0, z: 1}
+  orientationAfterTeleport: {x: 0, y: 0, z: 1}
   receivingTeleporter: {fileID: 1455550293}
 --- !u!65 &1550968616
 BoxCollider:
@@ -2415,7 +2415,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c1e63a1a24dcd2b469d17dbcd0a2c739, type: 2}
   m_PrefabInternal: {fileID: 1101056420}
   m_GameObject: {fileID: 1550968612}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: .0117485011, z: 0, w: .999930978}
   m_LocalPosition: {x: 149, y: .343557358, z: .053622961}
   m_LocalScale: {x: 2.49945045, y: 6.22040367, z: 1}
   m_Children:
