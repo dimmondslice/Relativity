@@ -51,6 +51,7 @@
      <Compile Include="Assets\Master.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointRespawnAt.cs" />
+     <Compile Include="Assets\Prefabs\SoundTriggers\addMusicLayer.cs" />
      <Compile Include="Assets\Teleporter.cs" />
      <Compile Include="Assets\levelchange.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
