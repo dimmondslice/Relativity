@@ -59,7 +59,7 @@
      <None Include="Assets\MaterialsAndShaders\Shaders\sdr_pencil02.shader" />
      <None Include="Assets\MaterialsAndShaders\Shaders\sdr_testShader.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Nick/Documents/TeamPlaceholder/TeamPlaceHolderGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/kongj3/CloudStation/RPI/Junior/GameDev1/Unity/shadows/TeamPlaceHolderGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
