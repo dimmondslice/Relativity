@@ -62,15 +62,15 @@ public class Character : MonoBehaviour
 	void Start ()
 	{
 		//gotta initialize those variables
-		maxSpeed = 10f;
+		maxSpeed = 8f;
 		currentSpeed = maxSpeed;
 		currentFallingSpeed = 0f;
-		maxFallingSpeed = 40f;
-		fallingAccel = 2f;
+		maxFallingSpeed = 70f;
+		fallingAccel = 7f;
 		relativeDownVec = new Vector3(0f,-1f,0f);
 		deathByFallDist = 20f;
 
-		jumpForce = 2000f;
+		jumpForce = 1500f;
 
 		CPRA = GetComponent<checkpointRespawnAt>();
 	}
@@ -80,9 +80,8 @@ public class Character : MonoBehaviour
 		//this is really mostly for debug, manually changes player orientation by pressing 1-6
 		CheckForManualOrientationChange();
 		if(onGround)
-		{
 			MovementMotor();
-		}
+
 		//apply gravity (don't worry inside the fn it checks if you're actually on the ground or not)
 		ApplyGravity();
 
@@ -119,7 +118,7 @@ public class Character : MonoBehaviour
 		//weighted forward vector based on vertical input axis
 		Vector3 verticalVelocity = transform.forward * Input.GetAxis("Vertical");
 		//vector that is orthogonal to transform.forward
-		Vector3 sideways = Vector3.Cross(transform.forward,relativeDownVec);
+		Vector3 sideways = transform.right;
 		//weighted sidways vector based on horizontal input axis
 		Vector3 horizontalVelocity = sideways * Input.GetAxis("Horizontal");
 		Debug.DrawRay(transform.position, sideways);
@@ -145,10 +144,7 @@ public class Character : MonoBehaviour
 				currentFallingSpeed += fallingAccel;
 			}
 			//adds "gravity vector" to your current velocity. gravity is just the relative downward direction time the scalar currentFallingSpeed
-			rigidbody.velocity = rigidbody.velocity + currentFallingSpeed * Time.deltaTime * relativeDownVec;
-
-			print(rigidbody.velocity);
-
+			rigidbody.velocity = rigidbody.velocity + currentFallingSpeed * Time.fixedDeltaTime * relativeDownVec;
 		}
 		else if (relativeYVel < .1f)	//this should prevent setting the rel. Y =0 if you just jumped
 		{
