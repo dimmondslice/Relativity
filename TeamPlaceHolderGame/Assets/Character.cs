@@ -70,7 +70,7 @@ public class Character : MonoBehaviour
 		relativeDownVec = new Vector3(0f,-1f,0f);
 		deathByFallDist = 20f;
 
-		jumpForce = 1500f;
+		jumpForce = 500f;
 
 		CPRA = GetComponent<checkpointRespawnAt>();
 	}
