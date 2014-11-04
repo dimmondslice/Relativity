@@ -15,15 +15,24 @@ public class Character : MonoBehaviour
 			//Debug.DrawLine( transform.position, transform.position + relativeDownVec * groundAccuracy);
 
 			//if there is something within groundAccuracy of your feet
-			Vector3 start = transform.position + relativeDownVec * -1 * .05f; // start the vector just slightly above the feet
+			Vector3 start = transform.position + relativeDownVec * -1 * .1f; // start the vector just slightly above the feet
 			if(Physics.Raycast(start, relativeDownVec, out hitInfo, groundAccuracy))
 			{
+				if(hitInfo.collider.gameObject.tag == "Stairs")
+				{
+					print ("on stairs set true");
+					onStairs = true;
+				}
+				else
+					onStairs = false;
+
 				_secretOnGround = true;
 				currentFallingSpeed = 0f;
 				return true;
 			}
 			else 
 			{
+				//onStairs = false;
 				//if there is nothing betweeen your feet and deathByFallDist underneath you, you will start to fall to your death
 				if(!Physics.Raycast(transform.position, relativeDownVec, out hitInfo, deathByFallDist))
 				{
@@ -35,6 +44,8 @@ public class Character : MonoBehaviour
 		}
 		protected set { _secretOnGround = value;}
 	}
+	public bool onStairs;
+
 	//this is the actual value of onGround, but don't ever use it, just needs to be here okay
 	private bool _secretOnGround;
 
@@ -62,15 +73,15 @@ public class Character : MonoBehaviour
 	void Start ()
 	{
 		//gotta initialize those variables
-		maxSpeed = 8f;
+		maxSpeed = 11f;
 		currentSpeed = maxSpeed;
 		currentFallingSpeed = 0f;
-		maxFallingSpeed = 70f;
-		fallingAccel = 7f;
+		maxFallingSpeed = 56f;
+		fallingAccel = 26f;
 		relativeDownVec = new Vector3(0f,-1f,0f);
 		deathByFallDist = 20f;
 
-		jumpForce = 1500f;
+		jumpForce = 800f;
 
 		CPRA = GetComponent<checkpointRespawnAt>();
 	}
@@ -79,8 +90,7 @@ public class Character : MonoBehaviour
 	{
 		//this is really mostly for debug, manually changes player orientation by pressing 1-6
 		CheckForManualOrientationChange();
-		if(onGround)
-			MovementMotor();
+		MovementMotor();
 
 		//apply gravity (don't worry inside the fn it checks if you're actually on the ground or not)
 		ApplyGravity();
@@ -88,10 +98,9 @@ public class Character : MonoBehaviour
 		//temporary way to check for jumping
 		if(Input.GetButtonDown("Jump") && onGround)
 		{
-			Jump();
+			//we've decided to cut jumping
+			//Jump();
 		}
-
-		Debug.DrawRay(transform.position, rigidbody.velocity, Color.magenta);
 	}
 
 	void OnTriggerEnter(Collider other)
@@ -111,26 +120,32 @@ public class Character : MonoBehaviour
 			//transform.forward = teleport.receivingTeleporter.forward;	//this is important, it makes sure you face the exit of the reciever teleport
 		}
 	}
+	void OnCollisionEnter(Collision other)
+	{
+
+	}
 
 	//moves the character based on user input, does not apply gravity, that is down from the ApplyGravity fn which is called from update()
 	protected void MovementMotor()
 	{
 		//weighted forward vector based on vertical input axis
-		Vector3 verticalVelocity = transform.forward * Input.GetAxis("Vertical");
-		//vector that is orthogonal to transform.forward
-		Vector3 sideways = transform.right;
+		Vector3 verticalVelocity = transform.forward * Input.GetAxis("Vertical") * .5f;
 		//weighted sidways vector based on horizontal input axis
-		Vector3 horizontalVelocity = sideways * Input.GetAxis("Horizontal");
-		Debug.DrawRay(transform.position, sideways);
-		Debug.DrawRay(transform.position, transform.forward);
+		Vector3 horizontalVelocity = transform.right * Input.GetAxis("Horizontal")* .5f;
+
+		//if you are in the air, decrease aerial control
+		if(!onGround)
+		{
+			verticalVelocity = transform.forward * Input.GetAxis("Vertical");
+			//weighted sidways vector based on horizontal input axis
+			horizontalVelocity = transform.right * Input.GetAxis("Horizontal");
+		}
+
 		//now add the horizontal and vertical vectors to give you your desired forward velocity
 		Vector3 newVelocity = verticalVelocity + horizontalVelocity;
 
-		//now scale the vector by your current speed
-		newVelocity *= currentSpeed;
-
-		//finally set your characters velocity equal to the vector we've been calculating
-		rigidbody.velocity = newVelocity;
+		//finally set your characters velocity equal to the vector we've been calculating and scale the vector by your current speed
+		rigidbody.velocity = newVelocity * currentSpeed;
 	}
 
 	protected void ApplyGravity()
@@ -141,10 +156,10 @@ public class Character : MonoBehaviour
 			if(currentFallingSpeed < maxFallingSpeed)
 			{
 				//your downward speed from gravity will accelerate based on time in seconds
-				currentFallingSpeed += fallingAccel;
+				currentFallingSpeed += fallingAccel * Time.fixedDeltaTime;
 			}
 			//adds "gravity vector" to your current velocity. gravity is just the relative downward direction time the scalar currentFallingSpeed
-			rigidbody.velocity = rigidbody.velocity + currentFallingSpeed * Time.fixedDeltaTime * relativeDownVec;
+			rigidbody.velocity = rigidbody.velocity + currentFallingSpeed * relativeDownVec;
 		}
 		else if (relativeYVel < .1f)	//this should prevent setting the rel. Y =0 if you just jumped
 		{
@@ -164,7 +179,6 @@ public class Character : MonoBehaviour
 			{
 				rigidbody.velocity = new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, 0f);
 			}
-
 		}
 	}
 	protected void Jump()
