@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Character.cs" />
      <Compile Include="Assets\Effects\musicLayer.cs" />
+     <Compile Include="Assets\Fade.cs" />
      <Compile Include="Assets\LoadNextLevel.cs" />
      <Compile Include="Assets\Master.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" />
@@ -55,9 +56,12 @@
      <Compile Include="Assets\Prefabs\SoundTriggers\addMusicLayer.cs" />
      <Compile Include="Assets\Teleporter.cs" />
      <Compile Include="Assets\UIscript.cs" />
+     <Compile Include="Assets\fadescript.cs" />
      <Compile Include="Assets\levelchange.cs" />
      <Compile Include="Assets\levelscript.cs" />
      <Compile Include="Assets\loadnextscene.cs" />
+     <Compile Include="Assets\render.cs" />
+     <Compile Include="Assets\sfba.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\MaterialsAndShaders\Shaders\sdr_flatSmooth.shader" />
      <None Include="Assets\MaterialsAndShaders\Shaders\sdr_pencil.shader" />
@@ -70,11 +74,7 @@
      <None Include="Assets\MaterialsAndShaders\Shaders\sdr_pencil02.shader" />
      <None Include="Assets\MaterialsAndShaders\Shaders\sdr_testShader.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
-<<<<<<< HEAD
  <HintPath>C:/Users/Nick/Documents/TeamPlaceholder/TeamPlaceHolderGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
-=======
- <HintPath>C:/Users/johnss18/Documents/TeamPlaceholder/TeamPlaceHolderGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
->>>>>>> 3e4dfe3c1538509d49eee03b955cbcc5063e0636
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
