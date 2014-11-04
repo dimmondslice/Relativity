@@ -1,12 +1,16 @@
 fileFormatVersion: 2
-guid: 89ed0f7ae6934f744a7bff1b5cd385b4
+guid: 3246f0dcf7449d240ac75c709ae8d52a
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: pCube2
+    100004: polySurface1
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
+    400002: pCube2
+    400004: polySurface1
+    2300000: polySurface1
+    3300000: polySurface1
     4300000: polySurface1
     9500000: //RootNode
   materials:
