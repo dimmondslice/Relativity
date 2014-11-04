@@ -5,24 +5,30 @@ public class musicLayer : MonoBehaviour {
 
 	public AudioClip[] audioClip;       // music layer array
 	public float audioFadeTween = 0.05f;
+	public string attachTargetName;
+	
 	
 	private AudioSource[] audioSource;  // audio source array
 	private float[] targetVolume; // desired sound, for cross fades
-	/*
-	private static DynamicSoundController instance = null;
-	public static DynamicSoundController Instance {
+	
+	private GameObject attachTarget;
+	private Transform attachTargetTransform;
+	private Transform myTransform;
+	
+	private static musicLayer instance = null;
+	public static musicLayer Instance {
 		get { return instance; }
 	}
 	
 	void Awake() {
-		if (instance != null &amp;&amp; instance != this) {
+		if (instance != null && instance != this) {
 			Destroy(this.gameObject);
 			return;
 		} else {
 			instance = this;
 		}
 		DontDestroyOnLoad(this.gameObject);
-	}*/
+	}
 	
 	// Use this for initialization
 	void Start()
@@ -38,6 +44,11 @@ public class musicLayer : MonoBehaviour {
 			audioSource[i].loop = true;
 			audioSource[i].volume = 0.0f;
 		}
+		
+		
+		attachTarget = GameObject.Find(attachTargetName);
+		attachTargetTransform = attachTarget.GetComponent<Transform>();
+		myTransform = GetComponent<Transform>();
 	}
 	
 	// Update is called once per frame
@@ -49,7 +60,7 @@ public class musicLayer : MonoBehaviour {
 			audioSource[i].volume = Mathf.Lerp( audioSource[i].volume, targetVolume[i], audioFadeTween );
 		}
 		
-		
+		myTransform.position = attachTargetTransform.position;
 	}
 	
 	public void setAudioVolume( int index, float volume ) {
