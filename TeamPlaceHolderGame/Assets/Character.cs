@@ -5,7 +5,7 @@ public class Character : MonoBehaviour
 {
 	//GROUND VARIABLES
 	public Vector3 relativeDownVec;//a vector which tells you where gravity is directing this character
-	private float groundAccuracy = .1f;//the distance of the racast from the feet, if there is an object less than that far away then you are on the ground
+	private float groundAccuracy = .25f;//the distance of the racast from the feet, if there is an object less than that far away then you are on the ground
 	private float deathByFallDist;//fall farther than this and you will die 
 	public bool onGround		//getter function returns whether you are on the ground or not
 	{
@@ -15,39 +15,25 @@ public class Character : MonoBehaviour
 			//Debug.DrawLine( transform.position, transform.position + relativeDownVec * groundAccuracy);
 
 			//if there is something within groundAccuracy of your feet
-			Vector3 start = transform.position + relativeDownVec * -1 * .1f; // start the vector just slightly above the feet
+			Vector3 start = transform.position + relativeDownVec * -.1f; // start the vector just slightly above the feet
+			Debug.DrawLine(start, transform.position + relativeDownVec * groundAccuracy);
 			if(Physics.Raycast(start, relativeDownVec, out hitInfo, groundAccuracy))
 			{
-				if(hitInfo.collider.gameObject.tag == "Stairs")
-				{
-					print ("on stairs set true");
-					onStairs = true;
-				}
-				else
-					onStairs = false;
-
-				_secretOnGround = true;
 				currentFallingSpeed = 0f;
 				return true;
 			}
 			else 
 			{
-				//onStairs = false;
 				//if there is nothing betweeen your feet and deathByFallDist underneath you, you will start to fall to your death
 				if(!Physics.Raycast(transform.position, relativeDownVec, out hitInfo, deathByFallDist))
 				{
 					StartFallingToDeath();
 				}
-				_secretOnGround = false;
 				return false;
 			}
 		}
-		protected set { _secretOnGround = value;}
 	}
-	public bool onStairs;
-
-	//this is the actual value of onGround, but don't ever use it, just needs to be here okay
-	private bool _secretOnGround;
+	
 
 	//CHARACTER PROPERTIES
 	public float maxSpeed{get; protected set;}
@@ -73,7 +59,7 @@ public class Character : MonoBehaviour
 	void Start ()
 	{
 		//gotta initialize those variables
-		maxSpeed = 11f;
+		maxSpeed = 8f;
 		currentSpeed = maxSpeed;
 		currentFallingSpeed = 0f;
 		maxFallingSpeed = 56f;
@@ -93,7 +79,8 @@ public class Character : MonoBehaviour
 		MovementMotor();
 
 		//apply gravity (don't worry inside the fn it checks if you're actually on the ground or not)
-		ApplyGravity();
+		if(!onGround)
+			ApplyGravity();
 
 		//temporary way to check for jumping
 		if(Input.GetButtonDown("Jump") && onGround)
@@ -120,25 +107,21 @@ public class Character : MonoBehaviour
 			//transform.forward = teleport.receivingTeleporter.forward;	//this is important, it makes sure you face the exit of the reciever teleport
 		}
 	}
-	void OnCollisionEnter(Collision other)
-	{
-
-	}
 
 	//moves the character based on user input, does not apply gravity, that is down from the ApplyGravity fn which is called from update()
 	protected void MovementMotor()
 	{
 		//weighted forward vector based on vertical input axis
-		Vector3 verticalVelocity = transform.forward * Input.GetAxis("Vertical") * .5f;
+		Vector3 verticalVelocity = transform.forward * Input.GetAxis("Vertical");
 		//weighted sidways vector based on horizontal input axis
-		Vector3 horizontalVelocity = transform.right * Input.GetAxis("Horizontal")* .5f;
+		Vector3 horizontalVelocity = transform.right * Input.GetAxis("Horizontal");
 
 		//if you are in the air, decrease aerial control
 		if(!onGround)
 		{
-			verticalVelocity = transform.forward * Input.GetAxis("Vertical");
+			verticalVelocity = transform.forward * Input.GetAxis("Vertical")* .5f;
 			//weighted sidways vector based on horizontal input axis
-			horizontalVelocity = transform.right * Input.GetAxis("Horizontal");
+			horizontalVelocity = transform.right * Input.GetAxis("Horizontal") * .5f;
 		}
 
 		//now add the horizontal and vertical vectors to give you your desired forward velocity
@@ -163,7 +146,6 @@ public class Character : MonoBehaviour
 		}
 		else if (relativeYVel < .1f)	//this should prevent setting the rel. Y =0 if you just jumped
 		{
-
 			currentFallingSpeed = 0f;
 
 			//if you are on the ground, set whichever axis of your velocity vec that is down = to 0

@@ -4,6 +4,7 @@ using System.Collections;
 public class addMusicLayer : MonoBehaviour {
 
 	public int soundLayerToActivate = 0;
+	public float volume = 1.0f;
 
 	private bool active = true;
 	
@@ -22,7 +23,7 @@ public class addMusicLayer : MonoBehaviour {
 		if ( active ) {
 			Debug.Log("sound change");
 			GameObject soundCon = GameObject.Find ("DynamicSoundController" );
-			soundCon.GetComponent<musicLayer>().setAudioVolume( soundLayerToActivate, 1.0f );
+			soundCon.GetComponent<musicLayer>().setAudioVolume( soundLayerToActivate, volume );
 			active = false;
 		}
 	}
