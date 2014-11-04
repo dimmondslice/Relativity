@@ -42,13 +42,15 @@ MonoBehaviour:
   audioClip:
   - {fileID: 8300000, guid: 478443d4a83484744a07c0e56ca0cda8, type: 3}
   - {fileID: 8300000, guid: cb26fa657d5e6e9409cab1f1c85e3e3f, type: 3}
-  - {fileID: 8300000, guid: b49a75c1e965211448b76418fcee8268, type: 3}
+  - {fileID: 8300000, guid: 9f52012037d5c214eb5ade53db676d91, type: 3}
   - {fileID: 8300000, guid: e2ddd7e0ecb35fe42996eaf756fa6598, type: 3}
   - {fileID: 8300000, guid: 567a475c3db077543a4565c1489975c6, type: 3}
   - {fileID: 8300000, guid: 9fe9339decf660344938865f13cf76c6, type: 3}
   - {fileID: 8300000, guid: 20a717dea94afc745b422dab456febf1, type: 3}
   - {fileID: 8300000, guid: 034b00f266c8f1149bc79f375f577a6b, type: 3}
   - {fileID: 8300000, guid: ca1356ca17e76704a9cb31f348ef6621, type: 3}
+  audioFadeTween: .0500000007
+  attachTargetName: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
