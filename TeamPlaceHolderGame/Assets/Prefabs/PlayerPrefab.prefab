@@ -3786,6 +3786,9 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 3b0faef2633d1014cb579cf04cba7a8d, type: 3}
   - {fileID: 7400000, guid: 0bca1dcc0ffd5da489018f7f57a2d24b, type: 3}
+  - {fileID: 7400000, guid: 0bca1dcc0ffd5da489018f7f57a2d24b, type: 3}
+  - {fileID: 7400000, guid: 0bca1dcc0ffd5da489018f7f57a2d24b, type: 3}
+  - {fileID: 7400000, guid: 0bca1dcc0ffd5da489018f7f57a2d24b, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -3821,6 +3824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   relativeDownVec: {x: 0, y: 0, z: 0}
   CPRA: {fileID: 0}
+  sword: {fileID: 400068}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3941,7 +3945,7 @@ SkinnedMeshRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 0281d2ffd5b4a6e4285e8561ccd33042, type: 2}
+  - {fileID: 2100000, guid: 21567e3868009134983d89ec628ec0a1, type: 2}
   - {fileID: 2100000, guid: 29f5f11c69b108c4d90f87ef116ecd73, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
