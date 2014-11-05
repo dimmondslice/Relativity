@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 034b00f266c8f1149bc79f375f577a6b, type: 3}
   - {fileID: 8300000, guid: ca1356ca17e76704a9cb31f348ef6621, type: 3}
   audioFadeTween: .0500000007
-  attachTargetName: 
+  attachTargetName: Main Camera
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

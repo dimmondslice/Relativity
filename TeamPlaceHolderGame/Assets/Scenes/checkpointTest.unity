@@ -581,6 +581,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 285241297}
   - 65: {fileID: 285241296}
+  - 114: {fileID: 285241298}
   - 114: {fileID: 285241295}
   m_Layer: 0
   m_Name: soundTrigger
@@ -602,6 +603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundLayerToActivate: 5
   volume: 1
+  activateAllUpTo: 0
 --- !u!65 &285241296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -627,6 +629,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
+--- !u!114 &285241298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602,
+    type: 2}
+  m_PrefabInternal: {fileID: 1673529526}
+  m_GameObject: {fileID: 285241294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5399322308fc3214fabb0e5bf372a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundLayerToActivate: 2
+  volume: 1
+  activateAllUpTo: 0
 --- !u!1001 &342438830
 Prefab:
   m_ObjectHideFlags: 0
@@ -882,6 +899,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 617834548}
   - 65: {fileID: 617834547}
+  - 114: {fileID: 617834549}
   - 114: {fileID: 617834546}
   m_Layer: 0
   m_Name: soundTrigger
@@ -903,6 +921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundLayerToActivate: 3
   volume: 1
+  activateAllUpTo: 0
 --- !u!65 &617834547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -928,6 +947,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
+--- !u!114 &617834549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602,
+    type: 2}
+  m_PrefabInternal: {fileID: 692232094}
+  m_GameObject: {fileID: 617834545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5399322308fc3214fabb0e5bf372a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundLayerToActivate: 2
+  volume: 1
+  activateAllUpTo: 0
 --- !u!1 &659365465
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +971,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 659365468}
   - 65: {fileID: 659365467}
+  - 114: {fileID: 659365469}
   - 114: {fileID: 659365466}
   m_Layer: 0
   m_Name: soundTrigger
@@ -958,6 +993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundLayerToActivate: 8
   volume: 1
+  activateAllUpTo: 0
 --- !u!65 &659365467
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -983,6 +1019,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 27
+--- !u!114 &659365469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602,
+    type: 2}
+  m_PrefabInternal: {fileID: 1901663730}
+  m_GameObject: {fileID: 659365465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5399322308fc3214fabb0e5bf372a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundLayerToActivate: 2
+  volume: 1
+  activateAllUpTo: 0
 --- !u!1 &666210541
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +1043,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 666210544}
   - 65: {fileID: 666210543}
+  - 114: {fileID: 666210545}
   - 114: {fileID: 666210542}
   m_Layer: 0
   m_Name: soundTrigger
@@ -1013,6 +1065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundLayerToActivate: 1
   volume: 1
+  activateAllUpTo: 0
 --- !u!65 &666210543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1038,6 +1091,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
+--- !u!114 &666210545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602,
+    type: 2}
+  m_PrefabInternal: {fileID: 1685585853}
+  m_GameObject: {fileID: 666210541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5399322308fc3214fabb0e5bf372a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundLayerToActivate: 2
+  volume: 1
+  activateAllUpTo: 0
 --- !u!1 &684658329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1115,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 684658332}
   - 65: {fileID: 684658331}
+  - 114: {fileID: 684658333}
   - 114: {fileID: 684658330}
   m_Layer: 0
   m_Name: soundTrigger
@@ -1068,6 +1137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundLayerToActivate: 7
   volume: .300000012
+  activateAllUpTo: 0
 --- !u!65 &684658331
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1093,6 +1163,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 26
+--- !u!114 &684658333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602,
+    type: 2}
+  m_PrefabInternal: {fileID: 2008959583}
+  m_GameObject: {fileID: 684658329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5399322308fc3214fabb0e5bf372a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundLayerToActivate: 2
+  volume: 1
+  activateAllUpTo: 0
 --- !u!1001 &692232094
 Prefab:
   m_ObjectHideFlags: 0
@@ -1329,6 +1414,50 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ef43de1acecbfe46997a4c941cf816e, type: 2}
   m_RootGameObject: {fileID: 212880842}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1001 &950672768
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 12.9589996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.53049994
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.55690002
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
+  m_RootGameObject: {fileID: 1109143839}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1001 &979873969
@@ -2506,7 +2635,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-  m_PrefabInternal: {fileID: 1589544403}
+  m_PrefabInternal: {fileID: 950672768}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1109143842}
@@ -2522,8 +2651,9 @@ GameObject:
 --- !u!114 &1109143840
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602,
+    type: 2}
+  m_PrefabInternal: {fileID: 950672768}
   m_GameObject: {fileID: 1109143839}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2532,12 +2662,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundLayerToActivate: 2
   volume: 1
+  activateAllUpTo: 0
 --- !u!65 &1109143841
 BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6500000, guid: 9b11c0584aaba6e4c9e832b3e57f6602,
     type: 2}
-  m_PrefabInternal: {fileID: 1589544403}
+  m_PrefabInternal: {fileID: 950672768}
   m_GameObject: {fileID: 1109143839}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2549,7 +2680,7 @@ BoxCollider:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-  m_PrefabInternal: {fileID: 1589544403}
+  m_PrefabInternal: {fileID: 950672768}
   m_GameObject: {fileID: 1109143839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.9589996, y: 2.53049994, z: 8.55690002}
@@ -2737,62 +2868,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 387b8f1f9d34ceb48b05d65a99903581, type: 3}
   m_RootGameObject: {fileID: 1626420136}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
---- !u!1001 &1589544403
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 12.9589996
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.53049994
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 8.55690002
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_RootOrder
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 2.08444476
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2.91822648
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 2.71686864
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 9b11c0584aaba6e4c9e832b3e57f6602, type: 2}
-  m_RootGameObject: {fileID: 1109143839}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1 &1626420136
@@ -3192,6 +3267,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1745404883}
   - 65: {fileID: 1745404882}
+  - 114: {fileID: 1745404884}
   - 114: {fileID: 1745404881}
   m_Layer: 0
   m_Name: soundTrigger
@@ -3213,6 +3289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundLayerToActivate: 4
   volume: 1
+  activateAllUpTo: 0
 --- !u!65 &1745404882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3238,6 +3315,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
+--- !u!114 &1745404884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602,
+    type: 2}
+  m_PrefabInternal: {fileID: 342438830}
+  m_GameObject: {fileID: 1745404880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5399322308fc3214fabb0e5bf372a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundLayerToActivate: 2
+  volume: 1
+  activateAllUpTo: 0
 --- !u!1 &1749949234
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,6 +3840,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2061811040}
   - 65: {fileID: 2061811039}
+  - 114: {fileID: 2061811041}
   - 114: {fileID: 2061811038}
   m_Layer: 0
   m_Name: soundTrigger
@@ -3769,6 +3862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundLayerToActivate: 6
   volume: 1
+  activateAllUpTo: 0
 --- !u!65 &2061811039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3794,6 +3888,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 25
+--- !u!114 &2061811041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602,
+    type: 2}
+  m_PrefabInternal: {fileID: 2005860433}
+  m_GameObject: {fileID: 2061811037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5399322308fc3214fabb0e5bf372a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundLayerToActivate: 2
+  volume: 1
+  activateAllUpTo: 0
 --- !u!1 &2123934842
 GameObject:
   m_ObjectHideFlags: 0
@@ -3803,6 +3912,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2123934844}
   - 65: {fileID: 2123934843}
+  - 114: {fileID: 2123934846}
   - 114: {fileID: 2123934845}
   m_Layer: 0
   m_Name: soundTrigger
@@ -3849,3 +3959,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundLayerToActivate: 0
   volume: 1
+  activateAllUpTo: 0
+--- !u!114 &2123934846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9b11c0584aaba6e4c9e832b3e57f6602,
+    type: 2}
+  m_PrefabInternal: {fileID: 979873969}
+  m_GameObject: {fileID: 2123934842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5399322308fc3214fabb0e5bf372a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundLayerToActivate: 2
+  volume: 1
+  activateAllUpTo: 0

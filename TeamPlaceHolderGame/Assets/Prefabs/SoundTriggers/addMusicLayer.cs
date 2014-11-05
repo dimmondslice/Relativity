@@ -5,6 +5,7 @@ public class addMusicLayer : MonoBehaviour {
 
 	public int soundLayerToActivate = 0;
 	public float volume = 1.0f;
+	public bool activateAllUpTo = false;
 
 	private bool active = true;
 	
@@ -23,7 +24,14 @@ public class addMusicLayer : MonoBehaviour {
 		if ( active ) {
 			Debug.Log("sound change");
 			GameObject soundCon = GameObject.Find ("DynamicSoundController" );
-			soundCon.GetComponent<musicLayer>().setAudioVolume( soundLayerToActivate, volume );
+			if ( activateAllUpTo ) {
+				for ( int i = 0; i < soundLayerToActivate; ++i ) {
+					soundCon.GetComponent<musicLayer>().setAudioVolume( i, volume );
+				}
+			}
+			else {
+				soundCon.GetComponent<musicLayer>().setAudioVolume( soundLayerToActivate, volume );
+			}
 			active = false;
 		}
 	}
