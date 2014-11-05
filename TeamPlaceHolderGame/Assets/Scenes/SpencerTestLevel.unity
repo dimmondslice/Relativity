@@ -13227,7 +13227,7 @@ Transform:
   m_Children:
   - {fileID: 1602468827}
   m_Father: {fileID: 0}
-  m_RootOrder: 67
+  m_RootOrder: 68
 --- !u!64 &649829854
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22321,7 +22321,7 @@ Transform:
   m_Children:
   - {fileID: 1892384081}
   m_Father: {fileID: 0}
-  m_RootOrder: 73
+  m_RootOrder: 74
 --- !u!1 &1185444292
 GameObject:
   m_ObjectHideFlags: 0
@@ -23986,7 +23986,7 @@ Transform:
   - {fileID: 1314838615}
   - {fileID: 277142658}
   m_Father: {fileID: 0}
-  m_RootOrder: 74
+  m_RootOrder: 73
 --- !u!64 &1294988060
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27961,6 +27961,7 @@ GameObject:
   - 4: {fileID: 1480233318}
   - 33: {fileID: 1480233320}
   - 23: {fileID: 1480233319}
+  - 114: {fileID: 1480233321}
   m_Layer: 0
   m_Name: FacingReference
   m_TagString: Untagged
@@ -28009,6 +28010,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1013543642}
   m_GameObject: {fileID: 1480233317}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1480233321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1480233317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46d5edbc9b8aee4cba438cf9a4af45c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 0
 --- !u!1 &1483596169
 GameObject:
   m_ObjectHideFlags: 0
@@ -37606,7 +37619,7 @@ Transform:
   - {fileID: 118744868}
   - {fileID: 1558078654}
   m_Father: {fileID: 0}
-  m_RootOrder: 68
+  m_RootOrder: 67
 --- !u!1 &2069425489
 GameObject:
   m_ObjectHideFlags: 0
