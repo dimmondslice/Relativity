@@ -30,7 +30,11 @@ public class SceneStart : MonoBehaviour
 		{
 			transform.position = Vector3.Lerp(character.transform.position,transform.position, 1f);
 
-			character.GetComponentInChildren<Animation>().Play("Stab");
+			character.GetComponentInChildren<Animation>().Play("StabCycle");
+
+			character.sword.GetComponent<Renderer>().enabled = true;
+
+			character.transform.position = transform.position;
 		}
 
 
