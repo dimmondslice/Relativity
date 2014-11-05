@@ -110,7 +110,6 @@ public class Character : MonoBehaviour
 		}
 		else if (other.tag == "SceneStarter")
 		{
-			print ("butts");
 			other.gameObject.GetComponent<SceneStart>().PlayScene(this);
 		}
 	}

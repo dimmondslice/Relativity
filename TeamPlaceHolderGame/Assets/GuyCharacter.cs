@@ -19,7 +19,7 @@ public class GuyCharacter : Character
 
 	protected override void Update () 
 	{
-		float distThreshold = .5f;
+		float distThreshold = .7f;
 
 		if(target == null)
 			target = PathNode.FindClosestNode(transform).transform;
@@ -57,11 +57,11 @@ public class GuyCharacter : Character
 		
 		if(angle > turnSnapAng)
 		{
-			transform.Rotate(0f, AngVel, 0f);
+			transform.Rotate(-relativeDownVec, AngVel);
 		}
 		else if (angle < -turnSnapAng)
 		{
-			transform.Rotate(0f, -AngVel, 0f);
+			transform.Rotate(-relativeDownVec, -AngVel);
 		}
 		else  		//otherwise just look right at them
 		{
