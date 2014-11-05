@@ -11,6 +11,8 @@ public class SceneStart : MonoBehaviour
 
 	public Transform enemy;
 
+	public bool camSwitch;
+
 	void Start () 
 	{
 	
@@ -18,7 +20,11 @@ public class SceneStart : MonoBehaviour
 
 	void Update () 
 	{
-	
+		if(camSwitch)
+		{
+
+			currentCharacter.transform.position = Vector3.Lerp(currentCharacter.transform.position,currentCharacter.transform.position - currentCharacter.transform.forward, .1f);
+		}
 	}
 	public void PlayScene(Character character)
 	{
@@ -44,6 +50,7 @@ public class SceneStart : MonoBehaviour
 			Invoke("KillerAnim", 3.5f);
 			Invoke("NextAnim", 4.5f);
 			Invoke("MyAnim", 8f);
+			Invoke("CamSwitch", 11f);
 		}
 		//starting scene, watching other guy run away, up the stairway
 		if(sceneNumber == 2)
@@ -66,7 +73,6 @@ public class SceneStart : MonoBehaviour
 
 	public void MyAnim()
 	{
-
 		currentCharacter.GetComponentInChildren<Animation>().Play("1stPersonStabbed");
 
 		currentCharacter.sword.gameObject.AddComponent("Rigidbody");
@@ -75,5 +81,10 @@ public class SceneStart : MonoBehaviour
 	public void KillerAnim()
 	{
 		currentCharacter.transform.Find ("Past").animation.Play("StabCycle");
+	}
+	public void CamSwitch()
+	{
+		var cam = currentCharacter.transform.Find ("Main Camera");
+		cam.transform.localPosition = new Vector3(.4f,1.5f,-2f);
 	}
 }

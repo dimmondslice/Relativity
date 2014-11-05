@@ -92,7 +92,7 @@ public class Character : MonoBehaviour
 		}
 	}
 
-	void OnTriggerEnter(Collider other)
+	protected virtual void OnTriggerEnter(Collider other)
 	{
 		//Start Teleport code
 		if(other.tag == "Teleport")
