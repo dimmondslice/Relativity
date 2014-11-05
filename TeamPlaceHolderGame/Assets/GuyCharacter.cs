@@ -6,15 +6,20 @@ public class GuyCharacter : Character
 	//the next node
 	public Transform target;
 
-	void Start ()
+	public float turnSnapAng = 10f;			//used to snap turns if the angle is less than this 
+	public float AngVel = 8f;
+
+	protected override void Start ()
 	{
-	
+		target = PathNode.FindClosestNode(transform).transform;
+		base.Start();
+
+		currentSpeed = 7f;
 	}
 
 	protected override void Update () 
 	{
-		/*
-		float distThreshold = 2f;
+		float distThreshold = .5f;
 
 		if(target == null)
 			target = PathNode.FindClosestNode(transform).transform;
@@ -23,10 +28,12 @@ public class GuyCharacter : Character
 		{
 			if(target.GetComponent<PathNode>().nextNode == null)					//if you run out of nodes to follow just start to wander around
 			{
-				//need to destroy this instance
+				Destroy(gameObject);
 			}
-			//otherwise just make the next node your target
-			target = target.GetComponent<PathNode>().nextNode.transform;
+			else//otherwise just make the next node your target
+			{
+				target = target.GetComponent<PathNode>().nextNode.transform;
+			}
 		}
 		//otherwise increase your speed
 		else
@@ -36,8 +43,32 @@ public class GuyCharacter : Character
 		}
 		//then actually move yourself
 		TurnTowards(target.position);
-		rigidbody.velocity = new Vector3(transform.forward.x * agent.currentSpeed, rigidbody.velocity.y, transform.forward.z * agent.currentSpeed);
-		*/
+		rigidbody.velocity = transform.forward * currentSpeed;
+
+		//apply gravity (don't worry inside the fn it checks if you're actually on the ground or not)
+		if(!onGround)
+			ApplyGravity();
+	}
+	public void TurnTowards(Vector3 POI)
+	{
+		//calculate the angle between this agents direction and the location of the target
+		Vector3 relative = transform.InverseTransformPoint(POI);
+		float angle = Mathf.Atan2(relative.x, relative.z) * Mathf.Rad2Deg;
+		
+		if(angle > turnSnapAng)
+		{
+			transform.Rotate(0f, AngVel, 0f);
+		}
+		else if (angle < -turnSnapAng)
+		{
+			transform.Rotate(0f, -AngVel, 0f);
+		}
+		else  		//otherwise just look right at them
+		{
+			Vector3 oldRot = transform.rotation.eulerAngles;
+			transform.LookAt(POI);
+			transform.rotation = Quaternion.Euler(oldRot.x, transform.rotation.eulerAngles.y, oldRot.z);
+		}
 	}
 	
 }

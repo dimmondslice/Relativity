@@ -56,7 +56,7 @@ public class Character : MonoBehaviour
 	//MISC
 	public checkpointRespawnAt CPRA;
 
-	void Start ()
+	protected virtual void Start ()
 	{
 		//gotta initialize those variables
 		maxSpeed = 8f;
@@ -105,6 +105,11 @@ public class Character : MonoBehaviour
 
 			transform.rotation = teleport.receivingTeleporter.rotation;
 			//transform.forward = teleport.receivingTeleporter.forward;	//this is important, it makes sure you face the exit of the reciever teleport
+		}
+		else if (other.tag == "SceneStarter")
+		{
+			print ("butts");
+			other.gameObject.GetComponent<SceneStart>().PlayScene(this);
 		}
 	}
 
