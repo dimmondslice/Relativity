@@ -1,9 +1,17 @@
 ﻿<Properties>
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\objectfade.cs">
+    <Files>
+      <File FileName="Assets\objectfade.cs" Line="25" Column="23" />
+      <File FileName="Assets\Fade.cs" Line="5" Column="1" />
+=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Character.cs">
     <Files>
       <File FileName="Assets\Character.cs" Line="81" Column="56" />
       <File FileName="Assets\GuyCharacter.cs" Line="32" Column="5" />
+>>>>>>> 2e240bdc6bea0dfc27b5c52b497ca70678ba5e2c
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
