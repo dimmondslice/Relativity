@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Animations\PathNode.cs" />
      <Compile Include="Assets\Character.cs" />
      <Compile Include="Assets\Effects\musicLayer.cs" />
      <Compile Include="Assets\Fade.cs" />
