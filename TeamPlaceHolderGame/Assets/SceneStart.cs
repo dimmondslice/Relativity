@@ -29,6 +29,8 @@ public class SceneStart : MonoBehaviour
 		if(sceneNumber == 1)
 		{
 			transform.position = Vector3.Lerp(character.transform.position,transform.position, 1f);
+
+			character.GetComponentInChildren<Animation>().Play("Stab");
 		}
 
 
