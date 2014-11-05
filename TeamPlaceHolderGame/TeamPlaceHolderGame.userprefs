@@ -1,11 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GuyCharacter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\levelscript.cs">
     <Files>
-      <File FileName="Assets\Character.cs" Line="118" Column="40" />
-      <File FileName="Assets\GuyCharacter.cs" Line="64" Column="22" />
-      <File FileName="Assets\SceneStart.cs" Line="36" Column="4" />
-      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="22" Column="34" />
+      <File FileName="Assets\levelscript.cs" Line="6" Column="12" />
+      <File FileName="Assets\levelscript.cs" Line="6" Column="12" />
+      <File FileName="Assets\Character.cs" Line="1" Column="1" />
+      <File FileName="Assets\GuyCharacter.cs" Line="1" Column="1" />
+      <File FileName="Assets\SceneStart.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
