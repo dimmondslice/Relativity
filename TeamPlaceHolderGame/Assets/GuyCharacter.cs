@@ -6,7 +6,7 @@ public class GuyCharacter : Character
 	//the next node
 	public Transform target;
 
-	public float turnSnapAng = 10f;			//used to snap turns if the angle is less than this 
+	public float turnSnapAng = 5f;			//used to snap turns if the angle is less than this 
 	public float AngVel = 8f;
 
 	protected override void Start ()
@@ -65,9 +65,11 @@ public class GuyCharacter : Character
 		}
 		else  		//otherwise just look right at them
 		{
+			/*
 			Vector3 oldRot = transform.rotation.eulerAngles;
 			transform.LookAt(POI);
 			transform.rotation = Quaternion.Euler(oldRot.x, transform.rotation.eulerAngles.y, oldRot.z);
+			*/
 		}
 	}
 	
