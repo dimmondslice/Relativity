@@ -11,6 +11,8 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400006}
+  - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Untagged
@@ -396,7 +398,7 @@ GameObject:
   - 4: {fileID: 400050}
   - 95: {fileID: 9500000}
   m_Layer: 0
-  m_Name: Run_Cycle
+  m_Name: Guy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1903,18 +1905,52 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400252}
+  - 114: {fileID: 11400008}
+  m_Layer: 0
+  m_Name: DynamicSoundController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400254}
+  - 114: {fileID: 11400012}
+  m_Layer: 0
+  m_Name: DynamicSoundController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.309, y: .064571999, z: 6.7565999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: .862993181, z: 0, w: -.505215704}
+  m_LocalPosition: {x: 4.13100004, y: .193770006, z: 3.90860009}
+  m_LocalScale: {x: .99999994, y: 1, z: .99999994}
   m_Children:
   - {fileID: 400002}
   - {fileID: 400004}
+  - {fileID: 400254}
+  - {fileID: 400252}
   - {fileID: 400050}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -2244,7 +2280,7 @@ Transform:
   - {fileID: 400210}
   - {fileID: 400066}
   m_Father: {fileID: 400000}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!4 &400052
 Transform:
   m_ObjectHideFlags: 1
@@ -3540,6 +3576,30 @@ Transform:
   - {fileID: 400170}
   m_Father: {fileID: 400074}
   m_RootOrder: 2
+--- !u!4 &400252
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100252}
+  m_LocalRotation: {x: 0, y: -.862993181, z: 0, w: -.505215704}
+  m_LocalPosition: {x: -7.05141211, y: 7.83203745, z: .689495802}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 3
+--- !u!4 &400254
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100254}
+  m_LocalRotation: {x: 0, y: -.862993181, z: 0, w: -.505215704}
+  m_LocalPosition: {x: -7.05141211, y: 7.83203745, z: .689495802}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 2
 --- !u!20 &2000000
 Camera:
   m_ObjectHideFlags: 1
@@ -3655,7 +3715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axes: 1
-  sensitivityX: 15
+  sensitivityX: 10
   sensitivityY: 0
   minimumX: -360
   maximumX: 360
@@ -3692,6 +3752,76 @@ MonoBehaviour:
   maximumX: 360
   minimumY: -60
   maximumY: 60
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613492339c74b1e4c9915a8dd8187efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newOrientation: {x: 0, y: 0, z: 0}
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eed91b3c430611458678f2f3a96da3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip:
+  - {fileID: 8300000, guid: 478443d4a83484744a07c0e56ca0cda8, type: 3}
+  - {fileID: 8300000, guid: cb26fa657d5e6e9409cab1f1c85e3e3f, type: 3}
+  - {fileID: 8300000, guid: 9f52012037d5c214eb5ade53db676d91, type: 3}
+  - {fileID: 8300000, guid: e2ddd7e0ecb35fe42996eaf756fa6598, type: 3}
+  - {fileID: 8300000, guid: 567a475c3db077543a4565c1489975c6, type: 3}
+  - {fileID: 8300000, guid: 9fe9339decf660344938865f13cf76c6, type: 3}
+  - {fileID: 8300000, guid: 20a717dea94afc745b422dab456febf1, type: 3}
+  - {fileID: 8300000, guid: 034b00f266c8f1149bc79f375f577a6b, type: 3}
+  - {fileID: 8300000, guid: ca1356ca17e76704a9cb31f348ef6621, type: 3}
+  audioFadeTween: .0500000007
+  attachTargetName: Main Camera
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613492339c74b1e4c9915a8dd8187efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newOrientation: {x: 0, y: 0, z: 0}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eed91b3c430611458678f2f3a96da3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip:
+  - {fileID: 8300000, guid: 478443d4a83484744a07c0e56ca0cda8, type: 3}
+  - {fileID: 8300000, guid: cb26fa657d5e6e9409cab1f1c85e3e3f, type: 3}
+  - {fileID: 8300000, guid: 9f52012037d5c214eb5ade53db676d91, type: 3}
+  - {fileID: 8300000, guid: e2ddd7e0ecb35fe42996eaf756fa6598, type: 3}
+  - {fileID: 8300000, guid: 567a475c3db077543a4565c1489975c6, type: 3}
+  - {fileID: 8300000, guid: 9fe9339decf660344938865f13cf76c6, type: 3}
+  - {fileID: 8300000, guid: 20a717dea94afc745b422dab456febf1, type: 3}
+  - {fileID: 8300000, guid: 034b00f266c8f1149bc79f375f577a6b, type: 3}
+  - {fileID: 8300000, guid: ca1356ca17e76704a9cb31f348ef6621, type: 3}
+  audioFadeTween: .0500000007
+  attachTargetName: Main Camera
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
