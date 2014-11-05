@@ -49,6 +49,7 @@
      <Compile Include="Assets\Character.cs" />
      <Compile Include="Assets\Effects\musicLayer.cs" />
      <Compile Include="Assets\Fade.cs" />
+     <Compile Include="Assets\GuyCharacter.cs" />
      <Compile Include="Assets\LoadNextLevel.cs" />
      <Compile Include="Assets\Master.cs" />
      <Compile Include="Assets\Prefabs\Checkpoints\checkpointNodeBehavior.cs" />
@@ -74,7 +75,7 @@
      <None Include="Assets\MaterialsAndShaders\Shaders\sdr_pencil02.shader" />
      <None Include="Assets\MaterialsAndShaders\Shaders\sdr_testShader.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Nick/Documents/TeamPlaceholder/TeamPlaceHolderGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/johnss18/Documents/TeamPlaceholder/TeamPlaceHolderGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
