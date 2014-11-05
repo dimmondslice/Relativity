@@ -56,6 +56,8 @@ public class Character : MonoBehaviour
 	//MISC
 	public checkpointRespawnAt CPRA;
 
+	public Transform sword;
+
 	protected virtual void Start ()
 	{
 		//gotta initialize those variables
