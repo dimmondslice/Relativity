@@ -977,28 +977,28 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Mesh: {fileID: 4300004, guid: 8be71fbd97158b84eac10e011f41abe2, type: 3}
+  m_Mesh: {fileID: 4300020, guid: 532556d9a089a8141a4ed2a47dabf6e3, type: 3}
 --- !u!33 &3300002
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_Mesh: {fileID: 4300004, guid: 8be71fbd97158b84eac10e011f41abe2, type: 3}
+  m_Mesh: {fileID: 4300020, guid: 532556d9a089a8141a4ed2a47dabf6e3, type: 3}
 --- !u!33 &3300004
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100030}
-  m_Mesh: {fileID: 4300004, guid: 8be71fbd97158b84eac10e011f41abe2, type: 3}
+  m_Mesh: {fileID: 4300020, guid: 532556d9a089a8141a4ed2a47dabf6e3, type: 3}
 --- !u!33 &3300006
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100032}
-  m_Mesh: {fileID: 4300004, guid: 8be71fbd97158b84eac10e011f41abe2, type: 3}
+  m_Mesh: {fileID: 4300020, guid: 532556d9a089a8141a4ed2a47dabf6e3, type: 3}
 --- !u!65 &6500000
 BoxCollider:
   m_ObjectHideFlags: 1
