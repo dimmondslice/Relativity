@@ -60,6 +60,7 @@
      <Compile Include="Assets\levelchange.cs" />
      <Compile Include="Assets\levelscript.cs" />
      <Compile Include="Assets\loadnextscene.cs" />
+     <Compile Include="Assets\objectfade.cs" />
      <Compile Include="Assets\render.cs" />
      <Compile Include="Assets\sfba.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
