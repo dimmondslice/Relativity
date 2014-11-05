@@ -13,8 +13,14 @@ public class LoadNextLevel : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		Application.LoadLevel(scene);
+		if(other.gameObject.tag=="player"){
+			Application.LoadLevel(scene);
+			print("SOMETHING");
+		}
 
+	}
+	void DOTHIS(int scene){
+		Application.LoadLevel (scene);
 	}
 	
 }

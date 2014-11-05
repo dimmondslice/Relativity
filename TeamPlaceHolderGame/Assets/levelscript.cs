@@ -13,8 +13,12 @@ public class levelscript : MonoBehaviour {
 	
 	}
 
-	public void HEREIMHERE(){
+	public void HEREIMHERE(int scene){
 
 		Application.LoadLevel (scene);
+	}
+	void OnTriggerEnter(Collider self){
+		Application.LoadLevel (scene);
+		print ("HERE");
 	}
 }
