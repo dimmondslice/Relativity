@@ -15883,6 +15883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   relativeDownVec: {x: 0, y: 0, z: 0}
   CPRA: {fileID: 0}
+  sword: {fileID: 0}
 --- !u!114 &877119034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17503,6 +17504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   relativeDownVec: {x: 0, y: 0, z: 0}
   CPRA: {fileID: 0}
+  sword: {fileID: 0}
   target: {fileID: 0}
   turnSnapAng: 10
   AngVel: 8
@@ -35672,6 +35674,7 @@ GameObject:
   - 33: {fileID: 2028021666}
   - 23: {fileID: 2028021665}
   - 64: {fileID: 2028021664}
+  - 114: {fileID: 2028021668}
   m_Layer: 0
   m_Name: Tunnel
   m_TagString: Untagged
@@ -35743,6 +35746,18 @@ Transform:
   - {fileID: 1345367296}
   m_Father: {fileID: 0}
   m_RootOrder: 28
+--- !u!114 &2028021668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2028021663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46d5edbc9b8aee4cba438cf9a4af45c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 0
 --- !u!1 &2028890565
 GameObject:
   m_ObjectHideFlags: 0
