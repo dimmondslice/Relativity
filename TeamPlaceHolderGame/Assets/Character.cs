@@ -56,7 +56,7 @@ public class Character : MonoBehaviour
 	//MISC
 	public checkpointRespawnAt CPRA;
 
-	void Start ()
+	protected virtual void Start ()
 	{
 		//gotta initialize those variables
 		maxSpeed = 8f;
@@ -72,7 +72,7 @@ public class Character : MonoBehaviour
 		CPRA = GetComponent<checkpointRespawnAt>();
 	}
 
-	void Update ()
+	protected virtual void Update ()
 	{
 		//this is really mostly for debug, manually changes player orientation by pressing 1-6
 		CheckForManualOrientationChange();
@@ -96,7 +96,6 @@ public class Character : MonoBehaviour
 		if(other.tag == "Teleport")
 		{
 			Teleporter teleport = other.GetComponent<Teleporter>();
-			print (teleport);
 			if(teleport.receivingTeleporter == null)// teleporters aren't really two sided so this should stop shenanigans
 				return;
 
@@ -107,10 +106,15 @@ public class Character : MonoBehaviour
 			transform.rotation = teleport.receivingTeleporter.rotation;
 			//transform.forward = teleport.receivingTeleporter.forward;	//this is important, it makes sure you face the exit of the reciever teleport
 		}
+		else if (other.tag == "SceneStarter")
+		{
+			print ("butts");
+			other.gameObject.GetComponent<SceneStart>().PlayScene(this);
+		}
 	}
 
 	//moves the character based on user input, does not apply gravity, that is down from the ApplyGravity fn which is called from update()
-	protected void MovementMotor()
+	protected virtual void MovementMotor()
 	{
 		//weighted forward vector based on vertical input axis
 		Vector3 verticalVelocity = transform.forward * Input.GetAxis("Vertical");
@@ -132,7 +136,7 @@ public class Character : MonoBehaviour
 		rigidbody.velocity = newVelocity * currentSpeed;
 	}
 
-	protected void ApplyGravity()
+	protected virtual void ApplyGravity()
 	{
 		if(!onGround)
 		{
@@ -171,7 +175,7 @@ public class Character : MonoBehaviour
 		//Debug.Break();
 	}
 
-	public void ChangeOrientation(Vector3 whichWayIsDown)
+	public virtual void ChangeOrientation(Vector3 whichWayIsDown)
 	{
 		//update down vec
 		relativeDownVec = whichWayIsDown;
