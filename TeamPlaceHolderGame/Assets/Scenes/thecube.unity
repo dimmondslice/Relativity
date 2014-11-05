@@ -13184,7 +13184,7 @@ GameObject:
   - 136: {fileID: 214677087}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21118,7 +21118,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 574
+  m_RootOrder: 573
 --- !u!65 &361137868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33835,7 +33835,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 71
+  m_RootOrder: 70
 --- !u!1001 &596019989
 Prefab:
   m_ObjectHideFlags: 0
@@ -34005,7 +34005,7 @@ Transform:
   m_LocalScale: {x: 1, y: 50, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 359
+  m_RootOrder: 360
 --- !u!1001 &597361287
 Prefab:
   m_ObjectHideFlags: 0
@@ -39831,7 +39831,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 360
+  m_RootOrder: 359
 --- !u!1 &699926328
 GameObject:
   m_ObjectHideFlags: 0
@@ -40021,7 +40021,7 @@ GameObject:
   - 111: {fileID: 703838128}
   m_Layer: 0
   m_Name: First_Person_Stab_Cycle
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55665,7 +55665,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 199
+  m_RootOrder: 198
 --- !u!1001 &1000452276
 Prefab:
   m_ObjectHideFlags: 0
@@ -58222,7 +58222,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 727edf2a0b861554a98f65d7a57a35f6, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 727edf2a0b861554a98f65d7a57a35f6, type: 3}
@@ -65457,7 +65457,7 @@ Transform:
   m_Children:
   - {fileID: 374554593}
   m_Father: {fileID: 0}
-  m_RootOrder: 70
+  m_RootOrder: 71
 --- !u!1001 &1175379544
 Prefab:
   m_ObjectHideFlags: 0
@@ -67317,7 +67317,7 @@ Transform:
   m_LocalScale: {x: 10, y: 1, z: 4.9000001}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 573
+  m_RootOrder: 574
 --- !u!1 &1213455608
 GameObject:
   m_ObjectHideFlags: 0
@@ -71926,7 +71926,7 @@ GameObject:
   - 114: {fileID: 1298029537}
   m_Layer: 0
   m_Name: DynamicSoundController
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73268,7 +73268,7 @@ GameObject:
   - 114: {fileID: 1318998531}
   m_Layer: 0
   m_Name: PlayerPrefab
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93142,7 +93142,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 198
+  m_RootOrder: 199
 --- !u!1001 &1654410637
 Prefab:
   m_ObjectHideFlags: 0
@@ -99528,7 +99528,7 @@ GameObject:
   - 81: {fileID: 1761396627}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116437,7 +116437,7 @@ GameObject:
   - 114: {fileID: 2039992387}
   m_Layer: 0
   m_Name: DynamicSoundController
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
