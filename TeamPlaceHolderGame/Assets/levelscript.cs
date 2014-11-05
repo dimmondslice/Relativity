@@ -3,6 +3,7 @@ using System.Collections;
 
 public class levelscript : MonoBehaviour {
 	// Use this for initialization
+	public int scene;
 	void Start () {
 	
 	}
@@ -12,7 +13,7 @@ public class levelscript : MonoBehaviour {
 	
 	}
 
-	public void HEREIMHERE(int scene){
+	public void HEREIMHERE(){
 
 		Application.LoadLevel (scene);
 	}
