@@ -13184,7 +13184,7 @@ GameObject:
   - 136: {fileID: 214677087}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32572,7 +32572,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f029aae1730296f40b839e67a2ff7ac7, type: 2}
       propertyPath: m_RootOrder
-      value: 60
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 400258, guid: f029aae1730296f40b839e67a2ff7ac7, type: 2}
       propertyPath: m_RootOrder
@@ -40021,7 +40021,7 @@ GameObject:
   - 111: {fileID: 703838128}
   m_Layer: 0
   m_Name: First_Person_Stab_Cycle
-  m_TagString: player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71926,7 +71926,7 @@ GameObject:
   - 114: {fileID: 1298029537}
   m_Layer: 0
   m_Name: DynamicSoundController
-  m_TagString: player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73268,7 +73268,7 @@ GameObject:
   - 114: {fileID: 1318998531}
   m_Layer: 0
   m_Name: PlayerPrefab
-  m_TagString: player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99528,7 +99528,7 @@ GameObject:
   - 81: {fileID: 1761396627}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: player
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116437,7 +116437,7 @@ GameObject:
   - 114: {fileID: 2039992387}
   m_Layer: 0
   m_Name: DynamicSoundController
-  m_TagString: player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
