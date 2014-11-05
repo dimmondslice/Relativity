@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6be7a7fe4b771fa47b42530cbf68a986
+guid: 3ae2ea86ff7c60646ab6e96a708b1a36
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -252,7 +252,6 @@ ModelImporter:
     4300000: pCube6
     7400000: Take 001
     9500000: //RootNode
-    11100000: //RootNode
     13700000: pCube6
   materials:
     importMaterials: 1
@@ -273,7 +272,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .00999999978
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -305,6 +304,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   additionalBone: 0
   userData: 
