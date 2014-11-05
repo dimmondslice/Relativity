@@ -65,12 +65,18 @@ public class GuyCharacter : Character
 		}
 		else  		//otherwise just look right at them
 		{
-
 			Vector3 oldRot = transform.rotation.eulerAngles;
 			transform.LookAt(POI);
 			transform.rotation = Quaternion.Euler(oldRot.x, transform.rotation.eulerAngles.y, oldRot.z);
-
 		}
 	}
-	
+	protected override void OnTriggerEnter(Collider other)
+	{
+		if(other.tag == "Teleport")
+		{
+			Destroy(gameObject);
+			return;
+		}
+		base.OnTriggerEnter(other);
+	}
 }

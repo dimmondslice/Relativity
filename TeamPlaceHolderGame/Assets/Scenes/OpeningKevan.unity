@@ -1330,7 +1330,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 32
 --- !u!1 &72718388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,7 +3942,7 @@ Transform:
   m_Children:
   - {fileID: 1702482855}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!64 &263931776
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5086,7 +5086,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 1944370194}
   m_GameObject: {fileID: 336317004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -5523,7 +5523,7 @@ Transform:
   - {fileID: 920730404}
   - {fileID: 916590361}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
 --- !u!95 &370863204
 Animator:
   serializedVersion: 3
@@ -6308,7 +6308,7 @@ Transform:
   - {fileID: 396846459}
   - {fileID: 24026042}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
 --- !u!95 &419689894
 Animator:
   serializedVersion: 3
@@ -7020,7 +7020,7 @@ Transform:
   - {fileID: 288377049}
   - {fileID: 1132238351}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 21
 --- !u!95 &468031464
 Animator:
   serializedVersion: 3
@@ -7898,7 +7898,7 @@ Transform:
   m_LocalScale: {x: .25, y: 5.47529888, z: 4.96444559}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 22
 --- !u!1 &530803266
 GameObject:
   m_ObjectHideFlags: 0
@@ -8600,15 +8600,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: f029aae1730296f40b839e67a2ff7ac7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.1870003
+      value: 9.14229965
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f029aae1730296f40b839e67a2ff7ac7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .0263700001
+      value: .222760007
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f029aae1730296f40b839e67a2ff7ac7, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 8.68249989
+      value: 8.21049976
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f029aae1730296f40b839e67a2ff7ac7, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8628,7 +8628,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f029aae1730296f40b839e67a2ff7ac7, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f029aae1730296f40b839e67a2ff7ac7, type: 2}
       propertyPath: axes
@@ -10011,7 +10011,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 1944370194}
   m_GameObject: {fileID: 656437122}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -10566,7 +10566,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 1944370194}
   m_GameObject: {fileID: 676040982}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -13824,7 +13824,7 @@ Transform:
   m_Children:
   - {fileID: 621394832}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
 --- !u!1 &916590360
 GameObject:
   m_ObjectHideFlags: 0
@@ -14180,7 +14180,7 @@ Transform:
   m_LocalScale: {x: 2.01970267, y: 3.24384308, z: 5.11710167}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 33
 --- !u!1 &934836307
 GameObject:
   m_ObjectHideFlags: 0
@@ -15262,7 +15262,7 @@ Transform:
   - {fileID: 1208722277}
   - {fileID: 268784355}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1 &988936590
 GameObject:
   m_ObjectHideFlags: 0
@@ -15623,7 +15623,7 @@ Transform:
   - {fileID: 1217959583}
   - {fileID: 1026565819}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
 --- !u!95 &1005421153
 Animator:
   serializedVersion: 3
@@ -16894,6 +16894,7 @@ MonoBehaviour:
   sceneLength: 0
   sceneNumber: 2
   currentCharacter: {fileID: 0}
+  enemy: {fileID: 0}
 --- !u!23 &1080420592
 Renderer:
   m_ObjectHideFlags: 0
@@ -18457,7 +18458,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 1944370194}
   m_GameObject: {fileID: 1212726121}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -19935,7 +19936,7 @@ Transform:
   m_PrefabInternal: {fileID: 580178590}
   m_GameObject: {fileID: 1302206772}
   m_LocalRotation: {x: 0, y: .941559434, z: 0, w: -.336847007}
-  m_LocalPosition: {x: 10.1870003, y: .0263700001, z: 8.68249989}
+  m_LocalPosition: {x: 9.14229965, y: .222760007, z: 8.21049976}
   m_LocalScale: {x: .99999994, y: 1, z: 1}
   m_Children:
   - {fileID: 1137021507}
@@ -19944,7 +19945,7 @@ Transform:
   - {fileID: 557863059}
   - {fileID: 1430243387}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
 --- !u!114 &1302206774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21267,7 +21268,7 @@ Transform:
   - {fileID: 693047507}
   - {fileID: 325526790}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
 --- !u!95 &1387533294
 Animator:
   serializedVersion: 3
@@ -21445,7 +21446,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 1944370194}
   m_GameObject: {fileID: 1402440017}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -22528,7 +22529,7 @@ Transform:
   - {fileID: 1982661359}
   - {fileID: 1915026555}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 31
 --- !u!95 &1481670374
 Animator:
   serializedVersion: 3
@@ -23710,7 +23711,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 1944370194}
   m_GameObject: {fileID: 1554822634}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -24101,7 +24102,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 25
 --- !u!1 &1577706425
 GameObject:
   m_ObjectHideFlags: 0
@@ -25922,7 +25923,7 @@ Transform:
   - {fileID: 260685548}
   - {fileID: 1374010209}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
 --- !u!95 &1705936121
 Animator:
   serializedVersion: 3
@@ -28618,7 +28619,7 @@ Transform:
   - {fileID: 1730204424}
   - {fileID: 156652102}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
 --- !u!95 &1903596300
 Animator:
   serializedVersion: 3
@@ -29637,7 +29638,7 @@ Transform:
   - {fileID: 1457100214}
   - {fileID: 1681737816}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
 --- !u!95 &1985125043
 Animator:
   serializedVersion: 3
