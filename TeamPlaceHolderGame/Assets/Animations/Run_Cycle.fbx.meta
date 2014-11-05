@@ -128,6 +128,7 @@ ModelImporter:
     100244: upper_back
     100246: upper_back_ctrl
     100248: upper_hips
+    100250: Guy
     400000: bottomSpineCluster
     400002: Character_Rig
     400004: chin
@@ -253,6 +254,7 @@ ModelImporter:
     400244: upper_back
     400246: upper_back_ctrl
     400248: upper_hips
+    400250: Guy
     2300000: pPlane1
     2300002: pPlane2
     3300000: pPlane1
@@ -260,9 +262,11 @@ ModelImporter:
     4300000: pPlane1
     4300002: pPlane2
     4300004: pCube6
+    4300006: Guy
     7400000: Run
     9500000: //RootNode
     13700000: pCube6
+    13700002: Guy
   materials:
     importMaterials: 1
     materialName: 0
