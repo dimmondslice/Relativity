@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 3b0faef2633d1014cb579cf04cba7a8d
-=======
-guid: 22ea5356acf2de844b78d806ebf110ac
->>>>>>> 2e240bdc6bea0dfc27b5c52b497ca70678ba5e2c
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -261,12 +257,8 @@ ModelImporter:
     3300000: Sword
     4300000: Guy
     4300002: Sword
-    7400000: 1stPersonStab
+    7400000: StabCycle
     9500000: //RootNode
-<<<<<<< HEAD
-=======
-    11100000: //RootNode
->>>>>>> 2e240bdc6bea0dfc27b5c52b497ca70678ba5e2c
     13700000: Guy
   materials:
     importMaterials: 1
@@ -285,7 +277,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: 1stPersonStab
+      name: StabCycle
       takeName: Take 001
       firstFrame: 1
       lastFrame: 179
@@ -563,11 +555,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-<<<<<<< HEAD
     globalScale: .00999999978
-=======
-    globalScale: 1
->>>>>>> 2e240bdc6bea0dfc27b5c52b497ca70678ba5e2c
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -599,10 +587,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-<<<<<<< HEAD
   animationType: 2
-=======
-  animationType: 1
->>>>>>> 2e240bdc6bea0dfc27b5c52b497ca70678ba5e2c
   additionalBone: 0
   userData: 
