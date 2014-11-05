@@ -96,6 +96,7 @@ public class Character : MonoBehaviour
 		if(other.tag == "Teleport")
 		{
 			Teleporter teleport = other.GetComponent<Teleporter>();
+			print (teleport);
 			if(teleport.receivingTeleporter == null)// teleporters aren't really two sided so this should stop shenanigans
 				return;
 
