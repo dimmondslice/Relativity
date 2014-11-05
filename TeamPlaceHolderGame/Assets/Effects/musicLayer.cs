@@ -14,7 +14,7 @@ public class musicLayer : MonoBehaviour {
 	private GameObject attachTarget;
 	private Transform attachTargetTransform;
 	private Transform myTransform;
-	
+	/* REMOVE BECAUSE THE LEVELS MAY NOT BE FINISHED, MAKE SOUND INDEPENDENT OF LEVEL
 	private static musicLayer instance = null;
 	public static musicLayer Instance {
 		get { return instance; }
@@ -29,7 +29,7 @@ public class musicLayer : MonoBehaviour {
 		}
 		DontDestroyOnLoad(this.gameObject);
 	}
-	
+	*/
 	// Use this for initialization
 	void Start()
 	{
@@ -61,7 +61,9 @@ public class musicLayer : MonoBehaviour {
 		}
 		
 		myTransform.position = attachTargetTransform.position;
+		myTransform.Translate( Vector3.up );
 	}
+
 	
 	public void setAudioVolume( int index, float volume ) {
 		if ( index < audioSource.Length ) {
