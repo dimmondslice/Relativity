@@ -63,6 +63,9 @@ ModelImporter:
     100114: transform8
     100116: transform9
     100118: Soft_Stairs
+    100120: polySurface1
+    100122: polySurface2
+    100124: polySurface3
     400000: //RootNode
     400002: pCube10
     400004: pCube11
@@ -123,15 +126,27 @@ ModelImporter:
     400114: transform8
     400116: transform9
     400118: Soft_Stairs
+    400120: polySurface1
+    400122: polySurface2
+    400124: polySurface3
     2300000: pCube12
     2300002: pCube31
     2300004: Soft_Stairs
+    2300006: polySurface1
+    2300008: polySurface2
+    2300010: polySurface3
     3300000: pCube12
     3300002: pCube31
     3300004: Soft_Stairs
+    3300006: polySurface1
+    3300008: polySurface2
+    3300010: polySurface3
     4300000: pCube12
     4300002: pCube31
     4300004: Soft_Stairs
+    4300006: polySurface1
+    4300008: polySurface2
+    4300010: polySurface3
     9500000: //RootNode
   materials:
     importMaterials: 1
