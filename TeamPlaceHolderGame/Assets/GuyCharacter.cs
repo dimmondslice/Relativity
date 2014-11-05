@@ -6,7 +6,7 @@ public class GuyCharacter : Character
 	//the next node
 	public Transform target;
 
-	public float turnSnapAng = 10f;			//used to snap turns if the angle is less than this 
+	public float turnSnapAng = 5f;			//used to snap turns if the angle is less than this 
 	public float AngVel = 8f;
 
 	protected override void Start ()
@@ -19,7 +19,7 @@ public class GuyCharacter : Character
 
 	protected override void Update () 
 	{
-		float distThreshold = .5f;
+		float distThreshold = .7f;
 
 		if(target == null)
 			target = PathNode.FindClosestNode(transform).transform;
@@ -57,17 +57,19 @@ public class GuyCharacter : Character
 		
 		if(angle > turnSnapAng)
 		{
-			transform.Rotate(0f, AngVel, 0f);
+			transform.Rotate(-relativeDownVec, AngVel);
 		}
 		else if (angle < -turnSnapAng)
 		{
-			transform.Rotate(0f, -AngVel, 0f);
+			transform.Rotate(-relativeDownVec, -AngVel);
 		}
 		else  		//otherwise just look right at them
 		{
+			/*
 			Vector3 oldRot = transform.rotation.eulerAngles;
 			transform.LookAt(POI);
 			transform.rotation = Quaternion.Euler(oldRot.x, transform.rotation.eulerAngles.y, oldRot.z);
+			*/
 		}
 	}
 	
