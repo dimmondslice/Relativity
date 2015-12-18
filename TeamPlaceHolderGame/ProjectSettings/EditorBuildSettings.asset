@@ -23,11 +23,11 @@ EditorBuildSettings:
     path: Assets/Scenes/testUI.unity
   - enabled: 1
     path: Assets/Scenes/startscreen.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/thecube.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OpeningKevan.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SpencerTestLevel.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AltOpening.unity
